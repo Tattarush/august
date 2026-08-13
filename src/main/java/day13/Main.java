@@ -1,10 +1,13 @@
 package day13;
 
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+        ArrayList<Integer> fails = new ArrayList<>();
 
         Random random = new Random();
         int target = random.nextInt(20);
@@ -23,9 +26,11 @@ public class Main {
                     System.out.println("Вышел за рамки диапазона");
                 }
                 if (num < target) {
+                    fails.add(num);
                     System.out.println("Неа! Число больше");
                 }
                 if (num > target) {
+                    fails.add(num);
                     System.out.println("Неа! Число меньше");
                 }
                 if (num == target) {
@@ -34,5 +39,7 @@ public class Main {
                 }
             }
         }
+        System.out.println("Твои попытки: ");
+        System.out.println(fails);
     }
 }
