@@ -10,7 +10,7 @@ public class Main {
         ArrayList<Integer> fails = new ArrayList<>();
 
         Random random = new Random();
-        int target = random.nextInt(20);
+        int target = random.nextInt(20) + 1;
 
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.println("Угадай какое число я загадал от 1 до 20");
@@ -24,6 +24,7 @@ public class Main {
                 int num = scanner.nextInt();
                 if (num < 1 || num > 20) {
                     System.out.println("Вышел за рамки диапазона");
+                    continue;
                 }
                 if (num < target) {
                     fails.add(num);
