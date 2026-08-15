@@ -1,8 +1,10 @@
 package day15.two;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
+import java.util.stream.Collectors;
 
 
 public class Main {
@@ -30,13 +32,8 @@ public class Main {
         }
     }
 
-    public static ArrayList<Integer> copy(int[] array) {
-        ArrayList<Integer> arr = new ArrayList<>();
-
-        for (int i = 0; i < array.length; i++) {
-            arr.add(array[i]);
-        }
-        return arr;
+    public static List<Integer> copy(int[] array) {
+        return Arrays.stream(array).boxed().collect(Collectors.toList());
     }
 
 }
