@@ -10,13 +10,13 @@ public class Solution {
         char[] chars = new char[10];
 
         for (int i = 0; i < chars.length; i++) {
-            chars[i] = (char) (random.nextInt(100) + 1);
+            chars[i] = (char) (96 + random.nextInt(26) + 1);
         }
 
         for (char x : chars) {
-
             System.out.print(x + " ");
-
         }
+
+        System.out.println("\n"+ String.valueOf(chars));
     }
 }
