@@ -16,13 +16,15 @@ public class Main {
         char ch;
         int count = 0;
 
+        System.out.println("Введите символ");
         do {
-            System.out.println("Введите символ");
             ch = (char) System.in.read();
             if (ch == ' ') {
                 count++;
             }
-            list.add(ch);
+            if (ch != '\n' || ch != '\r') {
+                list.add(ch);
+            }
         } while (ch != '.');
 
         System.out.println(list);
