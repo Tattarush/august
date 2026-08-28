@@ -22,12 +22,17 @@ public class Main {
             if (ch == ' ') {
                 count++;
             }
-            if (ch != '\n' || ch != '\r') {
+            if (ch != '\n' && ch != '\r') {
                 list.add(ch);
             }
         } while (ch != '.');
 
-        System.out.println(list);
+
+        StringBuilder st = new StringBuilder();
+        for (Character cha : list) {
+            st.append(cha);
+        }
+        System.out.println(st);
         System.out.println("Количество введенных пробелов = " + count);
 
     }
