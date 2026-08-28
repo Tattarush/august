@@ -1,0 +1,32 @@
+package day28.two;
+
+
+/*Напишите программу, которая получает символы,
+ введенные с клавиатуры, до тех пор, пока не встретится точка.
+ Предусмотрите в программе счетчик пробелов.
+ Сведения о количестве пробелов должны выводиться в конце программы.*/
+
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) throws java.io.IOException {
+
+        ArrayList<Character> list = new ArrayList<>();
+
+        char ch;
+        int count = 0;
+
+        do {
+            System.out.println("Введите символ");
+            ch = (char) System.in.read();
+            if (ch == ' ') {
+                count++;
+            }
+            list.add(ch);
+        } while (ch != '.');
+
+        System.out.println(list);
+        System.out.println("Количество введенных пробелов = " + count);
+
+    }
+}
