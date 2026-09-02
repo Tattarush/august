@@ -3,17 +3,10 @@ package september.day02.three;
 public class Main {
     public static void main(String[] args) {
 
-        Vehicle minivan = new Vehicle();
+        Vehicle minivan = new Vehicle(7,16,21);
 
-        minivan.passengers = 7;
-        minivan.fuelcap = 16;
-        minivan.mpg = 21;
 
-        Vehicle sportcar = new Vehicle();
-
-        sportcar.passengers = 2;
-        sportcar.fuelcap = 14;
-        sportcar.mpg = 12;
+        Vehicle sportcar = new Vehicle(2, 14, 12);
 
 
 
