@@ -17,10 +17,10 @@ public class Main {
 
 
 
-        System.out.println("Минивен может перевезти " + minivan.passengers + " пассажиров ");
-        minivan.range();
-        System.out.println("Спорткар может перевезти " + sportcar.passengers + " пассажиров ");
-        sportcar.range();
+        System.out.println("Минивен может перевезти " + minivan.passengers + " пассажиров " + "на расстояние - "+ minivan.range());
+
+        System.out.println("Спорткар может перевезти " + sportcar.passengers + " пассажиров "+ "на расстояние - "+ sportcar.range());
+
 
     }
 }
