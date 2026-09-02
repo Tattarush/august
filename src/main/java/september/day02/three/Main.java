@@ -21,6 +21,6 @@ public class Main {
 
         System.out.println("Спорткар может перевезти " + sportcar.passengers + " пассажиров "+ "на расстояние - "+ sportcar.range());
 
-
+        System.out.println("Для поездки на 252 миль минивену требуется - "+minivan.fuelNeeded(252)+" топлива");
     }
 }

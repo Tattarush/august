@@ -9,4 +9,9 @@ public class Vehicle {
     int range() {
         return fuelcap * mpg;
     }
+
+    double fuelNeeded(int range) {
+        return (double) range / mpg;
+    }
+
 }
