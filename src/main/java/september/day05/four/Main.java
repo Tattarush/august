@@ -20,5 +20,11 @@ public class Main {
             ch = (char) ((int) ch | 32);
             System.out.print(ch + " ");
         }
+        System.out.println();
+
+        ch = 'a';
+        System.out.println(ch);
+        ch = (char) (ch >> 1);
+        System.out.println(ch);
     }
 }
